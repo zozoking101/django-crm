@@ -1,26 +1,28 @@
+[build-system]
+build-backend = "uv_build"
+
+requires = [ "uv-build>=0.13,<0.14" ]
+
 [project]
 name = "django-crm"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 authors = [
-    { name = "Zoé Oladokun", email = "Zoeoladokun@gmail.com" }
+  { name = "Zoé Oladokun", email = "Zoeoladokun@gmail.com" },
 ]
 requires-python = ">=3.15"
+classifiers = [ "Programming Language :: Python :: 3 :: Only" ]
 dependencies = [
-    "django>=5.2,<6.0",
-    "pre-commit>=4.6.2",
-    "requests>=2.34.2",
+  "django>=5.2,<6",
+  "django-googler>=0.0.20",
+  "pre-commit>=4.6.2",
+  "requests>=2.34.2",
 ]
 
-[project.scripts]
-django-crm = "django_crm:main"
-
-[build-system]
-requires = ["uv_build>=0.13.0,<0.14.0"]
-build-backend = "uv_build"
+scripts.django-crm = "django_crm:main"
 
 [dependency-groups]
 dev = [
-    "pip>=26.2.1",
+  "pip>=26.2.1",
 ]
