@@ -29,6 +29,8 @@ djangorestframework==3.18.3
     #   djangorestframework-simplejwt
 djangorestframework-simplejwt==5.5.1
     # via django-googler
+dotenv==0.9.9
+    # via django-crm
 filelock==4.1.1
     # via
     #   python-discovery
@@ -63,6 +65,10 @@ pyjwt==2.15.1
     # via djangorestframework-simplejwt
 python-discovery==1.6.2
     # via virtualenv
+python-dotenv==1.2.4
+    # via
+    #   django-crm
+    #   dotenv
 pyyaml==6.0.3
     # via pre-commit
 requests==2.34.2
